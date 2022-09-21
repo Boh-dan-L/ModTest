@@ -1,0 +1,45 @@
+
+
+
+.input__style {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #81919D;
+    border-radius: 4px;
+    padding: 8px 0 8px 12px;
+    transition: 0.3s;
+    color:#38424B;
+
+
+    &::placeholder {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #667988;
+    }
+
+    &:hover {
+        border: 1px solid #738592;
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 0px 1px #FFFFFF, 0px 0px 0px 3px #667988;
+        border-color: #667988;
+        outline: none;
+    }
+
+    &:focus::placeholder {
+        color: #38424B ;
+    }
+    
+}
+
+.js-validate-error-field {
+    color: #38424B !important;
+}

@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; 
+  height: 100%;
+  background-color: #E5E5E5;
+  position: relative;
+
+  @media (min-width: 576px) {
+    padding: 10px 0;
+  }
+
+  &__logo {
+    position: absolute;
+    z-index: 10;
+    height: 40px;
+    min-width: 183px;
+    background-image: url(../images/signNow-Logo.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 50%;
+    margin: 0 auto;
+
+    @media (min-width: 440px) {
+      background-size: 80%;
+      top: 2%;
+    }
+
+    @media (min-width: 576px) {
+      background-size: 100%;
+      top: 3%
+    }
+
+    @media (min-width: 1024px) {
+      top: 77px;
+    }
+  }
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 628px;
+  padding: 30px 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  @media (min-width:375px) {
+    padding: 40px 44px;
+  }
+
+  @media (min-width: 575px) {
+    width: 576px;
+    padding: 60px 64px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 176px;
+  }
+
+  &__title {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 40px;
+    color: #2C2C2C;
+    margin-bottom: 12px;
+
+    @media (min-width:440px) {
+      font-size: 32px;
+      margin-bottom: 36px;
+      margin-top: 19px;
+    }
+
+    @media (min-width: 575px) {
+      margin-top: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    @media (min-width:440px) {
+      margin-bottom: 28px;
+    }
+
+    &--block {
+
+      &:first-child {
+        margin-right: 8px;
+
+        @media (min-width: 575px) {
+          margin-right: 16px;
+        }
+      }
+
+      &:last-child {
+        margin-left: 8px;
+
+        @media (min-width: 575px) {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+  &__hint {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #546470;
+    margin-bottom: 28px;
+    width: 100%;
+
+    &::before, &::after {
+      content: "";
+      display: inline-block;
+      background: #D8E0E6;
+      border-radius: 4px;
+      vertical-align: middle;
+      height: 1px;
+      flex-grow: 1;
+    }
+
+    &::before {
+      margin-right: 12px;
+    }
+
+    &::after {
+      margin-left: 12px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+    &__input {
+      min-width: 100%;
+      height: 40px;
+
+      &:nth-child(2) {
+        margin-top: 16px;
+      }
+    }
+
+    .js-validate-error-label {
+      display: block;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: #D73F3E;
+      text-align: start;
+      width: 100%;
+      margin-top: 4px;
+    }
+    
+    &__button {
+      margin: 28px 0 8px;
+      border: none;
+    }
+
+    &__text {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #546470;
+      margin-bottom: 28px;
+    }
+  }
+
+  .footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+
+    &__advice {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #2C2C2C;
+      margin-bottom: 12px;
+
+      @media (min-width: 540px) {
+        font-size: 16px;
+      }
+
+      &--link {
+        display: inline-block;
+        color: #0777CF;
+        transition: 0.3s;
+        &:hover {
+          color: #348FD7;
+        }
+      }
+    }
+    &__consent {
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: #667988;
+
+      &--link {
+        color: #667988;
+        transition: 0.3s;
+        &:hover {
+          color: #348FD7;
+        }
+      }
+    }
+  }
+}

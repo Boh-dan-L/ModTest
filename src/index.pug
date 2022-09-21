@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        .container
+            .container__logo
+            .popup
+                .popup__title Sign up for a free trial
+                .popup__buttons
+                    button.popup__buttons--block.button__facebook Facebook
+                    button.popup__buttons--block.button__google Google
+                    button.popup__buttons--block.button__apple Apple
+                .popup__hint or sign up using e-mail
+                form.form.js-form 
+                    input.form__input.input__style(type="text" placeholder="email@example.com" autocomplete="off" data-validate-field="email" name="email")
+                    input.form__input.input__style(type="password" placeholder="Enter password" autocomplete="off" data-validate-field="password" name="password")
+                    button.form__button.button__prime(type="submit") Start your free trial
+                    .form__text 🎉 No credit card required
+                .footer 
+                    .footer__advice Already have an account? 
+                        a.footer__advice--link(href="#") Login  
+                        |or 
+                        a.footer__advice--link(href="#") Login with SSO
+                    .footer__consent By proceeding to create your account, you agree to signNow's 
+                        a.footer__consent--link(href="#") Privacy Policy 
+                        |and 
+                        a.footer__consent--link(href="#") Terms of Service 
+                        | and opt to receive marketing communications
