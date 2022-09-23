@@ -1,0 +1,42 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #E5E5E5;
+    position: relative;
+
+    @media (min-width: 576px) {
+        padding: 10px 0;
+    }
+
+    &__logo {
+        position: absolute;
+        z-index: 10;
+        height: 40px;
+        min-width: 183px;
+        background-image: url(../images/signNow-Logo.svg);
+        background-repeat: no-repeat;
+        background-size: 55%;
+        background-position: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+
+        @media (min-width: 440px) {
+        background-size: 80%;
+        top: 2%;
+        }
+
+        @media (min-width: 576px) {
+        background-size: 100%;
+        top: 3%
+        }
+
+        @media (min-width: 1024px) {
+        top: 77px;
+        }
+    }
+}

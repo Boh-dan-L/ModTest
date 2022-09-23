@@ -1,0 +1,44 @@
+
+
+.footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+
+    &__advice {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #2C2C2C;
+        margin-bottom: 12px;
+
+        @media (min-width: 540px) {
+        font-size: 16px;
+        }
+
+        &--link {
+        display: inline-block;
+        color: #0777CF;
+        transition: 0.3s;
+
+            &:hover {
+                color: #348FD7;
+            }
+        }
+    }
+    &__consent {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #667988;
+
+        &--link {
+        color: #667988;
+        transition: 0.3s;
+
+            &:hover {
+                color: #348FD7;
+            }
+        }
+    }
+}

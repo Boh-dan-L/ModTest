@@ -2,6 +2,12 @@
 
 @use 'fonts';
 @use 'global';
-@use 'buttons-style';
+@use './buttons/secondary-buttons';
+@use './buttons/primary-buttons';
 @use 'inputs-style';
+@use 'exchange-rate';
+@use 'footer-popup';
+@use 'form';
+@use 'popup';
+@use 'container';
 //@import "~bootstrap/scss/bootstrap";

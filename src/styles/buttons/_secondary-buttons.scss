@@ -1,0 +1,85 @@
+
+// sedcondary buttoms
+.button__facebook  {
+    width: 90px;
+    background: url(../images/Icons/Facebook.svg) 50% no-repeat;
+
+    @media (min-width: 440px) {
+        background-position: 17% 46%;
+        width: 133px;
+        padding: 5px 21px;
+    }
+
+    @media (min-width: 540px) {
+        background-position: 25% 46%;
+        width: 153px;
+    }
+}
+
+.button__google {
+    width: 90px;
+    background: url(../images/Icons/Google-login.svg) 50% no-repeat;
+
+    @media (min-width: 440px) {
+        background-position: 21% 53%;
+        width: 116px;
+        padding: 8px 23px;
+    }
+
+    @media (min-width: 540px) {
+        background-position: 30% 53%;
+        width: 136px;
+    }
+}
+
+.button__apple {
+    width: 90px;
+    background: url(../images/Icons/Apple-login.svg) 50% no-repeat;
+
+    @media (min-width: 440px) {
+        background-position: 24% 46%;
+        width: 107px;
+        padding: 5px 22px;
+    }
+
+    @media (min-width: 540px) {
+        background-position: 31% 51%;
+        width: 127px;
+    }
+}
+
+.secondary__buttons {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: transparent;
+    background-color: #FFFFFF;
+    border: 1px solid #C7CED3;
+    border-radius: 4px;
+    height: 40px;
+    transition: 0.3s;
+
+    @media (min-width: 440px) {
+        color: #414141;
+    }
+
+    @media (min-width: 540px) {
+        padding: 8px 26px 8px 60px;
+        text-align: center;
+    }
+
+    &:hover {
+        border: 1px solid #0777CF;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &:focus {
+        border: 1px solid #0777CF;
+        box-shadow: 0px 0px 0px 1px #FFFFFF, 0px 0px 0px 3px #667988;
+        border-radius: 4px;
+    }
+}

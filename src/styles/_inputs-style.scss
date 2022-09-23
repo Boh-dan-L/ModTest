@@ -37,9 +37,22 @@
     &:focus::placeholder {
         color: #38424B ;
     }
-    
 }
 
 .js-validate-error-field {
     color: #38424B !important;
+}
+
+.js-validate-error-label {
+    display: block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D73F3E;
+    text-align: start;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 8px;
 }
